@@ -3,6 +3,8 @@
 VALOR: 0.7 pontos
 */
 
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Open+Sans:wght@400;600;700;800&display=swap');
+
 
 
 /* variáveis da paleta de cores do site */
@@ -13,11 +15,12 @@ VALOR: 0.7 pontos
     --corAlerta: #f13c20;
     --corClara: #c5cbe3;
     --corEscura: #333;
+    --corBranco:#fff;
 }
 
 /* configurações globais */
 * {
-    margin: 0;
+     margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -38,13 +41,24 @@ VALOR: 1.5 pontos: 0.3 do seletor e 0.3 de cada letra
 */
 
 
+.header{
+    padding:50px  calc(10% + 2vw);
+    background:linear-gradient(var(--corPrincipal),var(--corEscura)) ;
+    color: var(--corBranco);
+    width: 100%;
+
+}
+
 
 /* 
 03. Criar seletor CSS para elementos TD que sejam descendentes de elementos com a classe "header". Eles devem as seguintes configurações:
 a) ter alinhamento vertical centralizado (vertical-align: middle).
 VALOR: 0.6 pontos: 0.3 do seletor e 0.3 da letra a)
 */
-
+.header td{
+   vertical-align: middle;
+  
+}
 
 
 /* 
@@ -53,7 +67,10 @@ a) largura de 1%
 b) margem direita de 2vw
 VALOR: 0.6 pontos: 0.2 do seletor e 0.2 de cada letra
 */
-
+.logo{
+    width: 1%;
+    padding-right:2vw ;
+}
 
 
 /*
@@ -62,7 +79,11 @@ a) largura e altura de 9vw
 b) borda arredondada de 50%
 VALOR: 0.6 pontos: 0.2 do seletor e 0.2 de cada letra
 */
-
+.header img{
+    width:9vw ;
+    height: 9vw;
+    border-radius: 50%;
+}
 
 
 /* define o tamanho da fonte para elementos B descendentes de elementos da classe "header" */
@@ -83,7 +104,14 @@ b) margem superior e inferior de 0 e margens laterais automáticas
 c) separação entre células de 2vw (border-collapse: separate; e border-spacing: 2vw;)
 VALOR: 0.8 pontos: 0.2 do seletor e 0.2 de cada letra
 */
-
+.tabela{
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    border-collapse:separate;
+    border-spacing: 2vw;
+    
+}
 
 
 .menu {
@@ -247,7 +275,13 @@ d) cor de fundo branca
 e) borda superior sólida de 1px com a cor da variável --corEscura
 VALOR: 1.2 pontos: 0.2 do seletor e 0.2 de cada letra
 */
-
+.footer{
+    padding:30px calc(10% + 2vw);
+    color: var(--corEscura);
+    text-align: center;
+    background-color: var(--corBranco);
+    border-top: 1px solid var(--corEscura);
+}
 
 
 .footer img {
