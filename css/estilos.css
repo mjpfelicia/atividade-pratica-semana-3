@@ -132,18 +132,26 @@ VALOR: 0.8 pontos: 0.2 do seletor e 0.2 de cada letra
 }
 
 /* 
-07. Criar um seletor CSS para configurar elementos A que sejam descendentes de elementos da classe "menu", que estejam sob o cursor do mouse, para definir o estilo dos itens de menu quando o mouse passar sobre eles. O seletor deve ter as seguintes configurações:
+07. Criar um seletor CSS para configurar elementos A que sejam descendentes de elementos da classe "menu", 
+que estejam sob o cursor do mouse, para definir o estilo dos itens de menu quando o mouse passar sobre eles. 
+O seletor deve ter as seguintes configurações:
 a) cor do texto com a variável --corClara
 b) cor de fundo com a variável --corPrincipal
 VALOR: 0.8 pontos: 0.4 do seletor e 0.2 de cada letra
 */
 
-
+.menu a:hover {
+    color: var(--corClara);
+    background-color: var(--corPrincipal);
+}
 
 .menu a.active {
     color: white;
     background-color: var(--corEscura);
 }
+
+
+
 
 .hero h1 {
     font-size: 4vw;
@@ -163,8 +171,8 @@ VALOR: 1.2 pontos: 0.4 do seletor e 0.2 de cada letra
 
 
 .hero h3 {
-    font-size: 2vw;
     font-family: "Caveat";
+    font-size: 2vw;
     color: white;
 }
 
@@ -251,6 +259,14 @@ f) borda sólida de 1px com a cor da variável --corEscura
 VALOR: 2.0 pontos: 0.8 do seletor e 0.2 de cada letra
 */
 
+.formcontato input, select, textarea{
+    font-size: 2vw;
+    padding: .5vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    width: 40vw;
+    border: solid 1px var(--corEscura);
+}
 
 
 .formcontato button {
@@ -276,6 +292,8 @@ d) cor de fundo branca
 e) borda superior sólida de 1px com a cor da variável --corEscura
 VALOR: 1.2 pontos: 0.2 do seletor e 0.2 de cada letra
 */
+
+
 .footer {
     padding: 30px calc(10% + 2vw);
     color: var(--corEscura);
