@@ -91,11 +91,16 @@ VALOR: 0.6 pontos: 0.2 do seletor e 0.2 de cada letra
     font-size: 4vw;
 }
 
+
+
 /* define o tamanho e família da fonte para elementos SMALL descendentes de elementos da classe "header" */
 .header small {
     font-size: 2vw;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+
 
 /* 
 06. Criar uma classe CSS chamada "tabela" para configurar a tabela de experiências. Ela deve ter as seguintes configurações:
@@ -151,8 +156,6 @@ VALOR: 0.8 pontos: 0.4 do seletor e 0.2 de cada letra
 }
 
 
-
-
 .hero h1 {
     font-size: 4vw;
     color: var(--corTerciaria);
@@ -168,7 +171,12 @@ d) altura de linha de 3vw
 VALOR: 1.2 pontos: 0.4 do seletor e 0.2 de cada letra
 */
 
-
+.hero h2{
+    font-family: "Caveat";
+    font-size: 3vw;
+    color: var(--corClara);
+    line-height: 3vw;
+}
 
 .hero h3 {
     font-family: "Caveat";
